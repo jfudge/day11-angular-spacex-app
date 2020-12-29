@@ -1,0 +1,10 @@
+<h3>Dragons</h3>
+<div *ngFor="let dragon of dragons" class="shadow rounded mb-3 p-3 dragonCard">
+  <div class="row">
+    <div *ngFor="let image of dragon.flickr_images" class="col">
+      <img [src]="image" class="img-fluid" alt="">
+    </div>
+  </div>
+  <h4>{{ dragon.name }}</h4>
+  <p>{{ dragon.description }}</p>
+</div>

@@ -1,0 +1,9 @@
+<div *ngIf="crewMember">
+  <h3>{{ crewMember.name }}</h3>
+  <div class="row">
+    <div class="col-4">
+      <img [src]="crewMember.image" class="img-fluid" [alt]="crewMember.name">
+    </div>
+    <div class="col-8"></div>
+  </div>
+</div>
